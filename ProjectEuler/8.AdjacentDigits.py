@@ -53,10 +53,10 @@ for i in range(0,len(num)-12):
 		largest = multiply
 
 #Printing the largest multiple
-print(largest)
+print(largest)  # 23514624000
 
 #time at the end of execution
 end_time = time.time()
 
 #Printing the Time taken
-print(end_time - start_time)
+print(end_time - start_time)  # 0.007500410079956055
