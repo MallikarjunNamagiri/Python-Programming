@@ -23,6 +23,15 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(-1, 1), -1)
         self.assertEqual(calc.divide(- 1, -1), 1)
 
+        #self.assertRaises(ValueError, calc.divide, 10, 2) AssertionError: ValueError not raised by divide
+
+        # Method - 1
+        #self.assertRaises(ValueError, calc.divide, 10, 0) Ran 4 tests in 0.000s
+
+        # Method - 2 : Better to user Context Manager when testing the exceptions
+        with self.assertRaises(ValueError):
+            calc.divide(10, 0)
+
 
 #python -m unittest test_calc.py
 #Automate the code 
