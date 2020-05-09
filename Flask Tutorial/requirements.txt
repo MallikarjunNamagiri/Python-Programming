@@ -1,0 +1,7 @@
+numpy
+scipy
+Flask
+flask-wtf
+pandas
+scikit_learn
+censusgeocode
