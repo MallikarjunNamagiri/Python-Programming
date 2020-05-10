@@ -1,4 +1,3 @@
-numpy
 scipy
 Flask
 flask-wtf
