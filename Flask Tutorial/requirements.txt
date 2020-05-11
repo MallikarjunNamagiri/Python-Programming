@@ -1,6 +1,8 @@
+numpy
 scipy
-Flask
+Flask~=1.1.2
 flask-wtf
 pandas
 scikit_learn
 censusgeocode
+wtforms~=2.3.1

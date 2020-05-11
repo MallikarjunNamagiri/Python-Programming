@@ -5,7 +5,13 @@ Server show changes without restrat	: set FLASK_DEBUG=1
 '''
 
 from flask import Flask, render_template
+from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
+
+app.config['SECURITY KEY'] = 'bf22c5e81e14f93cd7b1daefce2e9f39'
+
+# import secrets
+# secrets.token_hex(16)
 
 #dummpy data
 posts = [
@@ -33,6 +39,16 @@ def home():
 def hello():
 	return render_template('about.html', title='About')
 
+@app.route('/register')
+def register():
+    form = RegistrationForm()
+    return render_template('register.html', title='Register', form=form)
+
+@app.route('/login')
+def login():
+    form = LoginForm()
+    return render_template('login.html', title='Login', form=form)
+
 # flask run directly from the code
 if __name__ == '__main__':
-	app.run(debug=True, host='0.0.0.0')
+	app.run(debug=True)
