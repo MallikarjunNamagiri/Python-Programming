@@ -1,0 +1,10 @@
+1. Version Control 	- GIT
+2. Databases		- 
+	SQL	-	ORM	- Object Relational Management
+	NoSql	- 	
+3. Command - Line / Terminal
+4. Unit Testing (CI/CD - Continuous Integration/Delivery)
+	Jenkins
+	Travis (travis.io)
+5. Learning Other Languages
+	Concentrate on Syntax
